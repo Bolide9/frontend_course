@@ -1,0 +1,70 @@
+.main_card {
+  background-color: #eeeff1;
+  height: 700px;
+  margin: 0px;
+}
+
+.body_cls {
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav_bar_cls {
+  padding-top: 72px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav_bar {
+  list-style-type: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-left: 400px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+li {
+  margin-right: 42px;
+}
+
+.logo_txt {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0em;
+  color: #34547a;
+  text-align: center;
+  font-family: "Revalia";
+}
+
+.main_card_desc {
+  display: flex;
+  padding-top: 160px;
+  justify-content: center;
+}
+
+.main_card_desc_text {
+  width: 541px;
+  color: #000;
+  font-size: 48px;
+  margin-top: 0px;
+  font-weight: 500;
+  margin-left: 24px;
+  font-family: "Roboto";
+}
+
+.main_card__title {
+  margin-top: 0px;
+}
+
+.main_card__desc {
+  color: #727272;
+  font-size: 16px;
+}
