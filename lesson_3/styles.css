@@ -1,0 +1,17 @@
+.link_a{
+    display: flex;
+}
+
+.main_img{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.name_input{
+    margin-bottom: 20px;
+}
+
+.btn{
+    margin-top: 20px;
+}
