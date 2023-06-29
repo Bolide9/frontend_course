@@ -1,17 +1,21 @@
-.main_card {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main_fragment {
   background-color: #eeeff1;
   height: 700px;
-  margin: 0px;
 }
 
 .body_cls {
-  padding: 0px;
-  margin: 0px;
+  font-family: "Roboto";
 }
 
 .nav_bar_cls {
-  padding-top: 72px;
   display: flex;
+  padding-top: 72px;
   justify-content: center;
 }
 
@@ -19,15 +23,11 @@
   list-style-type: none;
   display: inline-flex;
   align-items: center;
-  padding: 0;
-  margin: 0;
   margin-left: 400px;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 400;
   line-height: 26px;
-  letter-spacing: 0.1em;
+  font-weight: 400;
   text-align: left;
+  font-size: 16px;
 }
 
 li {
@@ -36,35 +36,114 @@ li {
 
 .logo_txt {
   font-size: 48px;
+  color: #34547a;
   font-weight: 400;
   line-height: 60px;
-  letter-spacing: 0em;
-  color: #34547a;
   text-align: center;
   font-family: "Revalia";
 }
 
-.main_card_desc {
+.main_fragment_body {
   display: flex;
-  padding-top: 160px;
+  margin-top: 160px;
   justify-content: center;
 }
 
-.main_card_desc_text {
+.main_fragment_desc_text {
   width: 541px;
   color: #000;
   font-size: 48px;
-  margin-top: 0px;
   font-weight: 500;
-  margin-left: 24px;
+  margin-left: 131px;
   font-family: "Roboto";
 }
 
-.main_card__title {
-  margin-top: 0px;
+.main_fragment__img {
+  height: 233.7px;
+  width: 357px;
 }
 
-.main_card__desc {
+.main_fragment__title {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+
+.main_fragment__description {
   color: #727272;
   font-size: 16px;
+  margin-top: 61px;
+  font-weight: 400;
+  line-height: 26.25px;
+}
+
+.write_me_btn {
+  background-color: #34547a;
+  margin-top: 60px;
+  cursor: pointer;
+  width: 225px;
+  height: 65px;
+  border: none;
+}
+
+.write_me_btn:hover {
+  background-color: #34537acc;
+}
+
+.write_me_btn_text {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+.about_me_fragment {
+  margin-top: 119px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.about_me_text {
+  width: 540px;
+  height: 147px;
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.about_me_title {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.about_me_description {
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #727272;
+  text-align: center;
+}
+
+.about_me_achievements {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #34547a;
+}
+
+.about_me_achievements_img {
+  width: 50px;
+  height: 50px;
+  margin: 100px 20px 100px 49px;
+}
+
+.about_me_achievements_count {
+  color: white;
+}
+
+.about_me_achievements_projects {
+  color: white;
 }
