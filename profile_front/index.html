@@ -5,51 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Revalia" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <!-- <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Revalia"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto"
-    />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
   </head>
   <body class="body_cls">
-    <div class="main_fragment">
-      <div class="nav_bar_cls">
-        <span class="logo_txt">WD</span>
-        <ul class="nav_bar">
-          <li>ГЛАВНАЯ</li>
-          <li>ОБ АВТОРЕ</li>
-          <li>РАБОТЫ</li>
-          <li>ПРОЦЕСС</li>
-          <li>КОНТАКТЫ</li>
-        </ul>
-      </div>
-      <div class="main_fragment_body">
-        <img class="main_fragment__img" src="img/main_card_computer.png" />
-        <div class="main_fragment_desc_text">
-          <h1 class="main_fragment__title">Дизайн и верстка</h1>
-          <p class="main_fragment__description">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br />вэб-дизайне.
-            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
-            начала XVI века.
-          </p>
-          <a href="#">
-            <button class="write_me_btn">
-              <span class="write_me_btn_text">НАПИСАТЬ МНЕ</span>
-            </button>
-          </a>
+    <div class="silver_background">
+      <div class="container">
+        <div class="main_container">
+          <div class="nav_bar">
+            <span class="logo_txt">WD</span>
+            <ul class="nav_bar_panel">
+              <li>ГЛАВНАЯ</li>
+              <li>ОБ АВТОРЕ</li>
+              <li>РАБОТЫ</li>
+              <li>ПРОЦЕСС</li>
+              <li>КОНТАКТЫ</li>
+            </ul>
+          </div>
+          <div class="main_container_body">
+            <img class="main_container_img" src="img/main_card_computer.png" />
+            <div class="main_container_desc_text">
+              <h1 class="main_container_title">Дизайн и верстка</h1>
+              <p class="main_container_description">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+              </p>
+              <a href="#about_me_achievements">
+                <button class="button write_me_btn_text">НАПИСАТЬ МНЕ</button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="about_me_fragment">
+    <div class="about_me_container container">
       <div class="about_me_text">
         <h2 class="about_me_title">Обо мне</h2>
         <span class="about_me_description"
-          >Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br />вэб-дизайне.
-          Lorem Ipsum является стандартной "рыбой" для текстов<br />на латинице
-          с начала XVI века.</span
+          >Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</span
         >
       </div>
     </div>
@@ -85,5 +84,101 @@
         <p class="about_me_achievements_projects">проектов</p>
       </div>
     </div>
+    <div class="my_skills_container container">
+      <div class="my_skills_container_enum">
+        <h2 class="my_skills_title">Мои навыки</h2>
+        <div class="progress-container">
+          <p class="my_skills_technology">Adobe Photoshop</p>
+          <div class="bar-container">
+            <div class="bar"></div>
+          </div>
+        </div>
+        <div class="progress-container">
+          <p class="my_skills_technology">Adobe Photoshop</p>
+          <div class="bar-container">
+            <div class="bar"></div>
+          </div>
+        </div>
+        <div class="progress-container">
+          <p class="my_skills_technology">Adobe Photoshop</p>
+          <div class="bar-container">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+      <img src="img/random_guy.jpg" />
+    </div>
+    <div class="silver_background">
+      <div class="how_i_work_fragment container">
+        <div class="how_i_work_text">
+          <h2 class="how_i_work_title">Как я работаю</h2>
+          <span class="how_i_work_description"
+            >Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</span
+          >
+        </div>
+        <div class="video_container">
+          <iframe
+            width="1110"
+            height="600"
+            frameborder="0"
+            src="https://www.youtube.com/embed/Xp6j7m7rqBc"
+            title="ASMR Programming - Video to ASCII C++ - No Talking"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="my_projects_container">
+      <div class="my_projects_fragment">
+        <img class="project-item" src="img/grid/notes.png" />
+        <img class="project-item" src="img/grid/computer.png" />
+        <img class="project-item" src="img/grid/notes.png" />
+        <img class="project-item" src="img/grid/computer.png" />
+        <img class="project-item" src="img/grid/computer.png" />
+        <img class="project-item" src="img/grid/notes.png" />
+        <img class="project-item" src="img/grid/computer.png" />
+        <img class="project-item" src="img/grid/notes.png" />
+      </div>
+      <div class="my_clients_fragment container">
+        <img class="client_logo_item" src="img/client_logo.png" />
+        <img class="client_logo_item" src="img/client_logo.png" />
+        <img class="client_logo_item" src="img/client_logo.png" />
+        <img class="client_logo_item" src="img/client_logo.png" />
+      </div>
+    </div>
+    <div class="silver_background">
+      <div class="container">
+        <div class="feedback_container">
+          <div class="feedback_form_desc">
+            <h2 class="want_site_title">Хотите веб-сайт?</h2>
+            <span class="want_site_description"
+              >Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</span
+            >
+          </div>
+          <div class="feedback_form">
+            <div class="feedback_form_name_and_email">
+              <input class="feedback_form_name_input" type="text" placeholder="Ваше имя" />
+              <input class="feedback_form_email_input" type="text" placeholder="Ваш e-mail" />
+            </div>
+            <textarea class="feedback_form_message_input" type="text" placeholder="Сообщение"></textarea>
+          </div>
+          <a href="#about_me_achievements">
+            <button class="button write_me_btn_text">ОТПРАВИТЬ</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="owner_info">
+        <h3 class="owner_name">Иванов Иван</h3>
+        <span class="owner_site_rights">(с) 2018. Все права защищены.</span>
+      </div>
+      <div class="social_media">
+        <img src="img/vk_social_network_logo.png" />
+        <img src="img/vk_social_network_logo.png" />
+        <img src="img/vk_social_network_logo.png" />
+      </div>
+    </footer>
   </body>
 </html>
