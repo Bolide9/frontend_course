@@ -95,10 +95,6 @@
   border: none;
 }
 
-.write_me_btn:hover {
-  background-color: #34537acc;
-}
-
 .write_me_btn_text {
   color: white;
   font-size: 16px;
@@ -351,4 +347,8 @@
 .social_media {
   display: flex;
   column-gap: 20px;
+}
+
+.button:hover {
+  background-color: #34537acc;
 }
