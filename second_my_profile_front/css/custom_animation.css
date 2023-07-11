@@ -1,129 +1,14 @@
 @keyframes in {
   0% {
-    transform: scale(0.4);
+    transform: scale(0.5);
     transform-origin: 100% 100%;
     border-radius: 120.5px 0px 8px 4px;
     border-top-left-radius: 120px;
   }
-  5% {
-    transform: scale(0.425);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 148px;
-  }
-  10% {
-    transform: scale(0.45);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 176px;
-  }
-  15% {
-    transform: scale(0.475);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 204px;
-  }
-  20% {
-    transform: scale(0.5);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 232px;
-  }
-  25% {
-    transform: scale(0.525);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 260px;
-  }
-  30% {
-    transform: scale(0.55);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 288px;
-  }
-  35% {
-    transform: scale(0.575);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 316px;
-  }
-  40% {
-    transform: scale(0.6);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 344px;
-  }
-  45% {
-    transform: scale(0.625);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 372px;
-  }
   50% {
-    transform: scale(0.65);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 400px;
-  }
-  55% {
-    transform: scale(0.675);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 428px;
-  }
-  60% {
     transform: scale(0.7);
     transform-origin: 100% 100%;
-    border-top-left-radius: 456px;
-  }
-  65% {
-    transform: scale(0.725);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 484px;
-  }
-  70% {
-    transform: scale(0.75);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 450px;
-  }
-  73% {
-    transform: scale(0.73);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 400px;
-  }
-  75% {
-    transform: scale(0.775);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 350px;
-  }
-  76% {
-    transform: scale(0.78);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 300px;
-  }
-  80% {
-    transform: scale(0.8);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 250px;
-  }
-  83% {
-    transform: scale(0.83);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 200px;
-  }
-  85% {
-    transform: scale(0.825);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 150px;
-  }
-  90% {
-    transform: scale(0.85);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 100px;
-  }
-  93% {
-    transform: scale(0.88);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 75px;
-  }
-  95% {
-    transform: scale(0.875);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 50px;
-  }
-  97% {
-    transform: scale(0.9);
-    transform-origin: 100% 100%;
-    border-top-left-radius: 25px;
+    border-top-left-radius: 562px;
   }
   100% {
     transform: scale(1);

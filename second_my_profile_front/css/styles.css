@@ -209,6 +209,7 @@ progress::-webkit-progress-value {
 .what-we-do__item_text {
   padding: 36px 24px 0px;
   position: absolute;
+  z-index: 9;
 }
 
 .what-we-do__item .title {
@@ -240,12 +241,14 @@ progress::-webkit-progress-value {
   margin-left: auto;
   background: #003adb;
   border-radius: 69.5px 0px 4px 4px;
+  transition: all .2s;
+  z-index: 2;
 }
 
 .what-we-do__item_icon:hover {
   width: 100%;
   height: 100%;
-  animation: in 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: in 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .solution-for-business {
