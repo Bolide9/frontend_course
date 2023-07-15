@@ -4,34 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Revalia" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header>
       <div class="silver_background">
         <div class="container">
-          <div class="nav_bar">
-            <span>WD</span>
-            <nav>
-              <ul>
-                <li>ГЛАВНАЯ</li>
-                <li>ОБ АВТОРЕ</li>
-                <li>РАБОТЫ</li>
-                <li>ПРОЦЕСС</li>
-                <li>КОНТАКТЫ</li>
-              </ul>
-            </nav>
-          </div>
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <span class="logo_txt">WD</span>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow: 0">
+                <ul class="navbar-nav align-items-end">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">ГЛАВНАЯ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ОБ АВТОРЕ</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link">РАБОТЫ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">ПРОЦЕСС</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">КОНТАКТЫ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
           <main>
-            <div class="main_container_body">
-              <img src="img/main_card_computer.png" />
-              <div class="main_container_desc_text">
+            <div class="main-desc d-flex justify-content-center" style="gap: 50px; padding: 60px 0">
+              <img class="img-responsive" src="img/main_card_computer.png" style="max-width: 350px; max-height: 234px; width: 100%; height: auto" />
+              <div class="d-flex flex-column" style="max-width: 540px">
                 <h1>Дизайн и верстка</h1>
-                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <p class="text-sm-start" , style="margin-top: 10px">
+                  Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                </p>
                 <button class="button">НАПИСАТЬ МНЕ</button>
               </div>
             </div>
@@ -42,17 +74,15 @@
 
     <section>
       <div class="container">
-        <div class="about_me_container">
-          <div class="about_me_text">
-            <h2>Обо мне</h2>
-            <span>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</span>
-          </div>
+        <div class="text-center" style="margin: 50px auto; max-width: 540px">
+          <h2>Обо мне</h2>
+          <span class="pt-4">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</span>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="about_me_achievements">
+      <div class="about_me_achievements d-flex align-items-center justify-content-center" style="background-color: #34547a; gap: 20px; padding: 50px 0px">
         <img src="img/about_me_projects.png" />
         <div class="about_me_achievements_text">
           <h3>40+</h3>
@@ -87,29 +117,31 @@
     </section>
 
     <section>
-      <div class="my_skills_container container">
-        <div class="my_skills_container_enum">
-          <h2 class="my_skills_title">Мои навыки</h2>
-          <div class="progress-container">
-            <p class="my_skills_technology">Adobe Photoshop</p>
-            <div class="bar-container">
-              <div class="bar"></div>
+      <div class="container">
+        <div class="my_skills_container d-flex align-items-center justify-content-center" , style="gap: 60px; margin: 100px 0px">
+          <div class="my_skills_container_enum" >
+            <h2 class="my_skills_title">Мои навыки</h2>
+            <div class="progress-container">
+              <p class="my_skills_technology">Adobe Photoshop</p>
+              <div class="bar-container">
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="progress-container">
+              <p class="my_skills_technology">Adobe Photoshop</p>
+              <div class="bar-container">
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="progress-container">
+              <p class="my_skills_technology">Adobe Photoshop</p>
+              <div class="bar-container">
+                <div class="bar"></div>
+              </div>
             </div>
           </div>
-          <div class="progress-container">
-            <p class="my_skills_technology">Adobe Photoshop</p>
-            <div class="bar-container">
-              <div class="bar"></div>
-            </div>
-          </div>
-          <div class="progress-container">
-            <p class="my_skills_technology">Adobe Photoshop</p>
-            <div class="bar-container">
-              <div class="bar"></div>
-            </div>
-          </div>
+          <img src="img/random_guy.jpg" />
         </div>
-        <img src="img/random_guy.jpg" />
       </div>
     </section>
 
@@ -191,5 +223,11 @@
         <img src="img/vk_social_network_logo.png" />
       </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

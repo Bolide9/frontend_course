@@ -76,13 +76,6 @@ body {
   background: linear-gradient(180deg, rgba(12, 17, 23, 0) 0%, #0c1117 77.08%);
 }
 
-@media screen and (min-width: 1800px) {
-  .main-container,
-  .main-content {
-    width: 100%;
-  }
-}
-
 .left-sidebar {
   display: flex;
   margin-right: 4em;
@@ -241,7 +234,7 @@ progress::-webkit-progress-value {
   margin-left: auto;
   background: #003adb;
   border-radius: 69.5px 0px 4px 4px;
-  transition: all .2s;
+  transition: all 0.2s;
   z-index: 2;
 }
 

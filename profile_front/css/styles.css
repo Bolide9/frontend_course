@@ -1,17 +1,5 @@
 /* common */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 1150px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .silver_background {
   background-color: #eeeff1;
 }
@@ -38,26 +26,7 @@ body {
 
 /* main */
 
-.nav_bar {
-  display: flex;
-  padding-top: 30px;
-  margin: 0px 30px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav_bar ul {
-  display: flex;
-  column-gap: 42px;
-  font-weight: 400;
-  list-style-type: none;
-}
-
-.nav_bar li {
-  cursor: pointer;
-}
-
-.nav_bar span {
+.logo_txt {
   font-size: 48px;
   color: #34547a;
   font-weight: 400;
@@ -66,93 +35,16 @@ body {
   font-family: "Revalia";
 }
 
-.main_container_body {
-  gap: 50px;
-  display: flex;
-  padding: 60px 0;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.main_container_desc_text {
-  max-width: 541px;
-}
-
-.main_container_body img {
-  max-width: 357px;
-  min-height: 234px;
-}
-
-.main_container_desc_text h1 {
-  font-size: 48px;
-  font-weight: bold;
-}
-
-.main_container_desc_text p {
-  color: #727272;
-  font-size: 16px;
-  margin-top: 61px;
-  font-weight: 400;
-  line-height: 26.25px;
-}
-
-.about_me_container {
-  margin: 50px;
+.about_me_achievements_text {
+  color: white;
   text-align: center;
 }
 
-.about_me_text {
-  max-width: 540px;
-  display: inline-flex;
-  flex-direction: column;
-}
-
-.about_me_text h2 {
-  font-size: 32px;
-  font-weight: 500;
-}
-
-.about_me_text span {
-  margin-top: 50px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #727272;
-}
-
-.about_me_achievements {
-  display: flex;
-  column-gap: 20px;
-  padding: 50px 0px;
-  align-items: center;
-  justify-content: center;
-  background-color: #34547a;
-}
-
-.about_me_achievements img {
-  width: 50px;
-  height: 50px;
-}
-
-.about_me_achievements_text {
-  color: white;
+.my_skills_container_enum {
+  min-width: 40%;
 }
 
 /* my skills */
-
-.my_skills_container {
-  display: flex;
-  padding: 0px 30px;
-  margin-top: 102px;
-  margin-bottom: 101px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.my_skills_container_enum {
-  width: 100%;
-  padding-right: 100px;
-}
 
 .bar-container {
   width: 100%;
