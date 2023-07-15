@@ -1,6 +1,9 @@
 @media screen and (max-width: 767px) {
   .main-desc,
-  .about_me_achievements {
+  .about_me_achievements,
+  .how_i_work-container, 
+  .my_clients_fragment
+  {
     flex-direction: column;
   }
   .my_skills_container {
