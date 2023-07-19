@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.secondary-text {
+  color: #9093a6;
+}
+
+.light-secondary-text {
+  font-size: 58px;
+  font-weight: 300;
+  line-height: 64px;
+  letter-spacing: 2.9px;
+  font-family: "Poppins";
+}
+
+.show-all-button {
+  border-radius: 4px;
+  padding: 16px 24px;
+  background-color: #f2f4fa;
+}
+
+body {
+  color: #3f4255;
+  font-family: "Martel Sans", "Times New Roman", Times, serif;
+}
+
+/* main-content */
+.top-bar {
+  border-bottom: solid #d4d7e5;
+}
+
+.main-container .main-container__item {
+  max-height: 72px;
+  border-radius: 4px;
+  padding: 16px 24px;
+  border: 2px solid #ffe145;
+}
+.main-container .main-container__item-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #3f4255;
+}
+.main-container .main-container__item-subtitle {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #3f4255;
+}
+
+.restaurant-achivements-container {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* restaurants-content */
+.restaurants-container__title {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 64px;
+  letter-spacing: 2.88px;
+}
+
+.restaurants-carousel__card {
+  color: white;
+  min-width: 296px;
+  min-height: 296px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 16px 0px rgba(60, 62, 74, 0.08);
+}
+
+/* contact-content */
+.contact-container-bg {
+  background-color: #f2f4fa;
+  min-height: 200px;
+}/*# sourceMappingURL=styles.css.map */

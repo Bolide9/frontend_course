@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <main>
+        <div class="top-bar h-20 flex items-center justify-between pl-24 pr-24">
+          <a href="#">
+            <img src="assets/icons/logo.svg" alt="Logo" />
+          </a>
+          <div class="secondary-text flex gap-12">
+            <a href="#">
+              <div class="flex gap-0.5">
+                <img src="assets/icons/person.svg" alt="Person" />
+                <span class="text-base font-bold tracking-wide">Log in</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="flex gap-0.5">
+                <img src="assets/icons/cart.svg" alt="Cart" />
+                <span>0</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="pl-24 pr-24">
+          <div class="main-container flex justify-between pt-8">
+            <div class="main-text-block pt-24">
+              <p class="light-secondary-text">Your Food court<br />at home</p>
+              <div class="flex flex-row flex-wrap pt-20 gap-6 align-center text-center">
+                <div class="main-container__item flex flex-col">
+                  <p class="main-container__item-title">Delivery</p>
+                  <p class="main-container__item-subtitle">Order in</p>
+                </div>
+                <div class="main-container__item flex flex-col">
+                  <p class="main-container__item-title">Takeout</p>
+                  <p class="main-container__item-subtitle">Grab and go</p>
+                </div>
+              </div>
+            </div>
+            <img src="assets/img/main_bg_img.png" alt="main_bg_img" style="max-width: 803px; max-height: 706px" />
+          </div>
+        </div>
+        <div class="restaurant-achivements-container inline-flex gap-8 pl-24">
+          <div class="inline-flex gap-4">
+            <img src="assets/icons/time-eat.svg" alt="time-eat-icon" />
+            <p>delivery in all paris<br />in less than 30 minutes</p>
+          </div>
+          <div class="inline-flex gap-4">
+            <img src="assets/icons/courier.svg" alt="courier-icon" />
+            <p>Free delivery<br />from 29 euros</p>
+          </div>
+          <div class="inline-flex gap-4">
+            <img src="assets/icons/paris.svg" alt="paris-icon" />
+            <p>Only fresh<br />and French products</p>
+          </div>
+        </div>
+      </main>
+    </header>
+
+    <section>
+      <div class="restaurants-container pt-20 mb-20">
+        <div class="flex flex-col pl-24 pr-24">
+          <div class="restaurants-container-block flex flex-row justify-between pb-20">
+            <p class="restaurants-container__title">Restaurants</p>
+            <button class="show-all-button">show all</button>
+          </div>
+          <div class="restaurants-carousel flex flex-row justify-center gap-10">
+            <div class="restaurants-carousel__card">
+              <img src="/yellow_kitchen_front/assets/restaurants_assets/images/burger-dlice.png" alt="" />
+              <div>
+                <img src="assets/restaurants_assets/icons/burger-dlice.svg" alt="" />
+              </div>
+            </div>
+            <div class="restaurants-carousel__card">
+              <img src="/yellow_kitchen_front/assets/restaurants_assets/images/il_pastifigio.png" alt="" />
+              <div>
+                <img src="assets/restaurants_assets/icons/il_pastifigio.svg" alt="" />
+              </div>
+            </div>
+            <div class="restaurants-carousel__card">
+              <img src="/yellow_kitchen_front/assets/restaurants_assets/images/burger-dlice.png" alt="" />
+              <div>
+                <img src="assets/restaurants_assets/icons/burger-dlice.svg" alt="" />
+              </div>
+            </div>
+            <div class="restaurants-carousel__card">
+              <img src="/yellow_kitchen_front/assets/restaurants_assets/images/il_pastifigio.png" alt="" />
+              <div>
+                <img src="assets/restaurants_assets/icons/il_pastifigio.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contact-container-bg">
+        <div class="contact-container__text-block flex flex-col align-center">
+          <p>Your nearest restaurants</p>
+          <p>Each kitchen works with its own delivery area<br />to deliver food to you as soon as possible</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
