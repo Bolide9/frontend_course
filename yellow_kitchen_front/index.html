@@ -13,9 +13,11 @@
     <header>
       <main>
         <div class="top-bar h-20 flex items-center justify-between pl-24 pr-24">
-          <a href="#">
-            <img src="assets/icons/logo.svg" alt="Logo" />
-          </a>
+          <div class="logo">
+            <a href="#">
+              <img src="assets/icons/logo.svg" alt="Logo" />
+            </a>
+          </div>
           <div class="secondary-text flex gap-12">
             <a href="#">
               <div class="flex gap-0.5">
@@ -67,35 +69,35 @@
     </header>
 
     <section>
-      <div class="restaurants-container pt-20 mb-20">
-        <div class="flex flex-col pl-24 pr-24">
-          <div class="restaurants-container-block flex flex-row justify-between pb-20">
-            <p class="restaurants-container__title">Restaurants</p>
+      <div class="pt-20">
+        <div class="flex flex-col ml-20 mr-20">
+          <div class="flex flex-row justify-between pb-20">
+            <p class="section-left-title">Restaurants</p>
             <button class="show-all-button">show all</button>
           </div>
-          <div class="restaurants-carousel flex flex-row justify-center gap-10">
+          <div class="restaurants-carousel flex flex-row flex-wrap justify-center gap-10">
             <div class="restaurants-carousel__card">
               <img src="/yellow_kitchen_front/assets/restaurants_assets/images/burger-dlice.png" alt="" />
               <div>
-                <img src="assets/restaurants_assets/icons/burger-dlice.svg" alt="" />
-              </div>
-            </div>
-            <div class="restaurants-carousel__card">
-              <img src="/yellow_kitchen_front/assets/restaurants_assets/images/il_pastifigio.png" alt="" />
-              <div>
-                <img src="assets/restaurants_assets/icons/il_pastifigio.svg" alt="" />
+                <img class="restaurants-carousel__card-logo" src="assets/restaurants_assets/icons/burger-dlice.svg" alt="" />
               </div>
             </div>
             <div class="restaurants-carousel__card">
               <img src="/yellow_kitchen_front/assets/restaurants_assets/images/burger-dlice.png" alt="" />
               <div>
-                <img src="assets/restaurants_assets/icons/burger-dlice.svg" alt="" />
+                <img class="restaurants-carousel__card-logo" src="assets/restaurants_assets/icons/burger-dlice.svg" alt="" />
               </div>
             </div>
             <div class="restaurants-carousel__card">
-              <img src="/yellow_kitchen_front/assets/restaurants_assets/images/il_pastifigio.png" alt="" />
+              <img src="/yellow_kitchen_front/assets/restaurants_assets/images/burger-dlice.png" alt="" />
               <div>
-                <img src="assets/restaurants_assets/icons/il_pastifigio.svg" alt="" />
+                <img class="restaurants-carousel__card-logo" src="assets/restaurants_assets/icons/burger-dlice.svg" alt="" />
+              </div>
+            </div>
+            <div class="restaurants-carousel__card">
+              <img src="/yellow_kitchen_front/assets/restaurants_assets/images/burger-dlice.png" alt="" />
+              <div>
+                <img class="restaurants-carousel__card-logo" src="assets/restaurants_assets/icons/burger-dlice.svg" alt="" />
               </div>
             </div>
           </div>
@@ -104,10 +106,96 @@
     </section>
 
     <section>
-      <div class="contact-container-bg">
-        <div class="contact-container__text-block flex flex-col align-center">
-          <p>Your nearest restaurants</p>
-          <p>Each kitchen works with its own delivery area<br />to deliver food to you as soon as possible</p>
+      <div class="light-dark-bg flex items-center justify-center pt-20 pb-20 mt-20">
+        <div class="contact-container__text-block flex flex-row items-center gap-40">
+          <div>
+            <p class="contact-container__title">Your nearest restaurants</p>
+            <p class="contact-container__subtitle pt-6">Each kitchen works with its own delivery area<br />to deliver food to you as soon as possible</p>
+          </div>
+          <input type="text" class="contact-container__delivery-address-input" placeholder="Enter delivery address" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex flex-col mt-20 ml-20 mr-20">
+        <div class="flex flex-row justify-between pb-20">
+          <p class="section-left-title">Specialities</p>
+          <button class="show-all-button">show all</button>
+        </div>
+        <div class="flex flex-row justify-center gap-10">
+          <div class="specialities-item">
+            <img src="./assets/icons/specialities_icons/bagel.svg" alt="" />
+            <p class="specialities-item__title">Bagel</p>
+          </div>
+          <div class="specialities-item">
+            <img src="./assets/icons/specialities_icons/burger.svg" alt="" />
+            <p class="specialities-item__title">Burger</p>
+          </div>
+          <div class="specialities-item">
+            <img src="./assets/icons/specialities_icons/chicken.svg" alt="" />
+            <p class="specialities-item__title">Chicken</p>
+          </div>
+          <div class="specialities-item">
+            <img src="./assets/icons/specialities_icons/fish.svg" alt="" />
+            <p class="specialities-item__title">Fish</p>
+          </div>
+          <div class="specialities-item">
+            <img src="./assets/icons/specialities_icons/fishnchips.svg" alt="" />
+            <p class="specialities-item__title">Fish’Chips</p>
+          </div>
+          <div class="specialities-item">
+            <img src="./assets/icons/specialities_icons/vegan.svg" alt="" />
+            <p class="specialities-item__title">Salads</p>
+          </div>
+          <div class="specialities-item">
+            <img src="./assets/icons/specialities_icons/pizza.svg" alt="" />
+            <p class="specialities-item__title">Pizza</p>
+          </div>
+          <div class="specialities-item">
+            <img src="./assets/icons/specialities_icons/raviolli.svg" alt="" />
+            <p class="specialities-item__title">Pasta</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class=" flex items-center justify-center mt-20 mb-20 h-[284px]">
+        <img class="absolute" src="assets/img/restaurant-franchise-bg.png" alt="restaurant-franchise-bg" />
+        <div class="restaurant-franchise__items flex flex-row justify-center gap-20">
+          <div class="flex justify-center align-center">
+            <div class="w-[183px] h-[126px] relative">
+              <div class="w-[126px] h-[126px] left-[29px] top-0 absolute bg-yellow-300 rounded-full"></div>
+              <div class="w-[127px] h-[127px] left-[28px] top-[-23px] absolute rounded-full border border-yellow-600"></div>
+              <div class="w-[68px] h-[68px] left-[52px] top-[13px] absolute text-center text-gray-700 text-[58px] font-bold leading-[64px] tracking-[2.90px]">1</div>
+              <div class="w-[225px] left-[-21px] top-[128px] absolute text-center text-gray-700 text-2xl font-semibold leading-loose">kitchen</div>
+            </div>
+          </div>
+          <div>
+            <div class="w-[183px] h-[126px] relative">
+              <div class="w-[126px] h-[126px] left-[29px] top-0 absolute bg-yellow-300 rounded-full"></div>
+              <div class="w-[127px] h-[127px] left-[28px] top-[-23px] absolute rounded-full border border-yellow-600"></div>
+              <div class="w-[68px] h-[68px] left-[52px] top-[13px] absolute text-center text-gray-700 text-[58px] font-bold leading-[64px] tracking-[2.90px]">11</div>
+              <div class="w-[225px] left-[-21px] top-[128px] absolute text-center text-gray-700 text-2xl font-semibold leading-loose">specialties</div>
+            </div>
+          </div>
+          <div>
+            <div class="w-[183px] h-[126px] relative">
+              <div class="w-[126px] h-[126px] left-[29px] top-0 absolute bg-yellow-300 rounded-full"></div>
+              <div class="w-[127px] h-[127px] left-[28px] top-[-23px] absolute rounded-full border border-yellow-600"></div>
+              <div class="w-[68px] h-[68px] left-[52px] top-[13px] absolute text-center text-gray-700 text-[58px] font-bold leading-[64px] tracking-[2.90px]">11</div>
+              <div class="w-[225px] left-[-21px] top-[128px] absolute text-center text-gray-700 text-2xl font-semibold leading-loose">restaurants</div>
+            </div>
+          </div>
+          <div>
+            <div class="w-[183px] h-[126px] relative">
+              <div class="w-[126px] h-[126px] left-[29px] top-0 absolute bg-yellow-300 rounded-full"></div>
+              <div class="w-[127px] h-[127px] left-[28px] top-[-23px] absolute rounded-full border border-yellow-600"></div>
+              <div class="w-[68px] h-[68px] left-[52px] top-[13px] absolute text-center text-gray-700 text-[58px] font-bold leading-[64px] tracking-[2.90px]">1</div>
+              <div class="w-[225px] left-[-21px] top-[128px] absolute text-center text-gray-700 text-2xl font-semibold leading-loose">transport costs</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  color: #3f4255;
+  font-family: "Martel Sans", "Times New Roman", Times, serif;
+}
+
 .secondary-text {
   color: #9093a6;
 }
@@ -16,20 +21,33 @@
   font-family: "Poppins";
 }
 
+.section-left-title {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 64px;
+  letter-spacing: 2.88px;
+}
+
 .show-all-button {
   border-radius: 4px;
   padding: 16px 24px;
   background-color: #f2f4fa;
 }
 
-body {
-  color: #3f4255;
-  font-family: "Martel Sans", "Times New Roman", Times, serif;
+.light-dark-bg {
+  background-color: #f2f4fa;
 }
 
 /* main-content */
 .top-bar {
   border-bottom: solid #d4d7e5;
+}
+.top-bar .logo {
+  transition: all 0.5s;
+}
+.top-bar .logo:hover {
+  transition: all 0.3s;
+  filter: drop-shadow(3px 1px 20px #ffe145);
 }
 
 .main-container .main-container__item {
@@ -61,23 +79,90 @@ body {
 }
 
 /* restaurants-content */
-.restaurants-container__title {
+.restaurants-carousel__card {
+  color: white;
+  width: 296px;
+  height: 296px;
+  border-radius: 4px;
+  transition: all 0.3s;
+  box-shadow: 0px 2px 16px 0px rgba(60, 62, 74, 0.08);
+}
+.restaurants-carousel__card:hover {
+  transition: all 0.5s;
+  border-color: transparent;
+  outline-color: #ffe145;
+  background-color: #ffe145;
+}
+
+/* contact-content */
+.contact-container__text-block .contact-container__title {
   font-size: 36px;
   font-weight: 300;
   line-height: 64px;
   letter-spacing: 2.88px;
+  color: #3f4255;
+  font-family: "Poppins";
+}
+.contact-container__text-block .contact-container__subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #3f4255;
+}
+.contact-container__text-block .contact-container__delivery-address-input {
+  width: 336px;
+  height: 72px;
+  border: none;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #9093a6;
+  padding-left: 46px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.08);
+  background: white url(../assets/icons/location.svg) no-repeat scroll 16px center;
+}
+.contact-container__text-block .contact-container__delivery-address-input:focus {
+  border: none;
+  outline-color: #ffe145;
 }
 
-.restaurants-carousel__card {
-  color: white;
-  min-width: 296px;
-  min-height: 296px;
-  border-radius: 4px;
+/* Specialities */
+.specialities-item {
+  width: 136px;
+  height: 136px;
+  row-gap: 16px;
+  display: flex;
+  border-radius: 6px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   box-shadow: 0px 2px 16px 0px rgba(60, 62, 74, 0.08);
+  color: #313030;
+  transition: all 0.7s;
 }
-
-/* contact-content */
-.contact-container-bg {
-  background-color: #f2f4fa;
-  min-height: 200px;
+.specialities-item img {
+  width: 48px;
+  height: 48px;
+  color: #313030;
+  transition: all 0.7s;
+}
+.specialities-item p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #313030;
+  transition: all 0.7s;
+}
+.specialities-item:hover {
+  transition: all 0.5s;
+  background-color: #ffe145;
+}
+.specialities-item:hover p {
+  color: white;
+  transition: all 0.3s;
 }/*# sourceMappingURL=styles.css.map */
