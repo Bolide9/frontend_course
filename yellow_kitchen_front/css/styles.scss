@@ -16,16 +16,9 @@ body {
   font-family: "Martel Sans", "Times New Roman", Times, serif;
 }
 
-.secondary-text {
-  color: $gray-color;
-}
-
-.light-secondary-text {
-  font-size: 58px;
-  font-weight: 300;
-  line-height: 64px;
-  letter-spacing: 2.9px;
-  font-family: $secondaty-font-family;
+.container {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-left-title {
@@ -45,22 +38,31 @@ body {
   background-color: $light-dark-color;
 }
 
+.logo {
+  transition: all 0.5s;
+
+  &:hover {
+    transition: all 0.3s;
+    filter: drop-shadow(3px 1px 20px $yellow-color);
+  }
+}
+
 /* main-content */
 
 .top-bar {
   border-bottom: solid #d4d7e5;
-
-  .logo {
-    transition: all 0.5s;
-
-    &:hover {
-      transition: all 0.3s;
-      filter: drop-shadow(3px 1px 20px $yellow-color);
-    }
-  }
 }
 
 .main-container {
+  .main-container-title {
+    font-size: 58px;
+    font-weight: 300;
+    line-height: 64px;
+    letter-spacing: 2.9px;
+    color: $light-gray-color;
+    font-family: $secondaty-font-family;
+  }
+
   .main-container__item {
     max-height: 72px;
     border-radius: 4px;
@@ -170,12 +172,6 @@ body {
   box-shadow: 0px 2px 16px 0px rgba(60, 62, 74, 0.08);
   @include specialities-item-hover(all 0.7s, #313030);
 
-  img {
-    width: 48px;
-    height: 48px;
-    @include specialities-item-hover(all 0.7s, #313030);
-  }
-
   p {
     font-size: 16px;
     font-weight: 300;
@@ -191,6 +187,39 @@ body {
 
     p {
       @include specialities-item-hover(all 0.3s, white);
+    }
+  }
+}
+
+/* footer */
+
+footer {
+  .footer__social-media-item {
+    width: 24px;
+    height: 24px;
+    transition: all 0.5s;
+    background: url(../assets/icons/insta_icon.svg) no-repeat 0px center;
+
+    &:nth-child(3) {
+      background: url(../assets/icons/twitter_icon.svg) no-repeat 0px center;
+    }
+
+    &:nth-child(2) {
+      background: url(../assets/icons/fb_icon.svg) no-repeat 0px center;
+    }
+
+    &:hover {
+      transition: all 0.3s;
+      filter: drop-shadow(0px 0px 10px $yellow-color);
+    }
+  }
+
+  p {
+    transition: all 0.5s;
+
+    &:hover {
+      color: $yellow-color;
+      transition: all 0.3s;
     }
   }
 }
