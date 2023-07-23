@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #3f4255;
+  font-family: "Martel Sans", "Times New Roman", Times, serif;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-left-title {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 64px;
+  letter-spacing: 2.88px;
+}
+
+.show-all-button {
+  border-radius: 4px;
+  padding: 16px 24px;
+  background-color: #f2f4fa;
+}
+
+.light-dark-bg {
+  background-color: #f2f4fa;
+}
+
+.logo {
+  transition: all 0.5s;
+}
+.logo:hover {
+  transition: all 0.3s;
+  filter: drop-shadow(3px 1px 20px #ffe145);
+}
+
+/* main-content */
+.top-bar {
+  border-bottom: solid #d4d7e5;
+}
+
+.main-container .main-container-title {
+  font-size: 58px;
+  font-weight: 300;
+  line-height: 64px;
+  letter-spacing: 2.9px;
+  color: #3f4255;
+  font-family: "Poppins";
+}
+.main-container .main-container__item {
+  max-height: 72px;
+  border-radius: 4px;
+  padding: 16px 24px;
+  border: 2px solid #ffe145;
+}
+.main-container .main-container__item-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #3f4255;
+}
+.main-container .main-container__item-subtitle {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #3f4255;
+}
+
+.restaurant-achivements-container {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* restaurants-content */
+.restaurants-carousel__card {
+  color: white;
+  width: 296px;
+  height: 296px;
+  border-radius: 4px;
+  transition: all 0.3s;
+  box-shadow: 0px 2px 16px 0px rgba(60, 62, 74, 0.08);
+}
+.restaurants-carousel__card:hover {
+  transition: all 0.5s;
+  border-color: transparent;
+  outline-color: #ffe145;
+  background-color: #ffe145;
+}
+
+/* contact-content */
+.contact-container__text-block .contact-container__title {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 64px;
+  letter-spacing: 2.88px;
+  color: #3f4255;
+  font-family: "Poppins";
+}
+.contact-container__text-block .contact-container__subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #3f4255;
+}
+.contact-container__text-block .contact-container__delivery-address-input {
+  width: 336px;
+  height: 72px;
+  border: none;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #9093a6;
+  padding-left: 46px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.08);
+  background: white url(/public/location.svg) no-repeat scroll 16px center;
+}
+.contact-container__text-block .contact-container__delivery-address-input:focus {
+  border: none;
+  outline-color: #ffe145;
+}
+
+/* Specialities */
+.specialities-item {
+  width: 136px;
+  height: 136px;
+  row-gap: 16px;
+  display: flex;
+  border-radius: 6px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 2px 16px 0px rgba(60, 62, 74, 0.08);
+  color: #313030;
+  transition: all 0.7s;
+}
+.specialities-item p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #313030;
+  transition: all 0.7s;
+}
+.specialities-item:hover {
+  transition: all 0.5s;
+  background-color: #ffe145;
+}
+.specialities-item:hover p {
+  color: white;
+  transition: all 0.3s;
+}
+
+/* footer */
+footer .footer__social-media-item {
+  width: 24px;
+  height: 24px;
+  transition: all 0.5s;
+  background: url(/public/insta_icon.svg) no-repeat 0px center;
+}
+footer .footer__social-media-item:nth-child(3) {
+  background: url(/public/twitter_icon.svg) no-repeat 0px center;
+}
+footer .footer__social-media-item:nth-child(2) {
+  background: url(/public/fb_icon.svg) no-repeat 0px center;
+}
+footer .footer__social-media-item:hover {
+  transition: all 0.3s;
+  filter: drop-shadow(0px 0px 10px #ffe145);
+}
+footer p {
+  transition: all 0.5s;
+}
+footer p:hover {
+  color: #ffe145;
+  transition: all 0.3s;
+}/*# sourceMappingURL=styles.css.map */
