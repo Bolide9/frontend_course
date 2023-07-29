@@ -1,26 +1,49 @@
-// Тип данных "строка" (string)
-const date = Date(1999, 2, 28);
+/// 1
 
-console.log(date);
+const myConstant = 5;
 
-// Тип данных "число с плавающей запятой" (float)
-const pi = 3.14;
+myConstant < 10 ? console.log("константа меньше 10") : console.log("константа не меньше 10");
 
-console.log(`pi ${pi}`);
+///
 
-const myConstant = "Hello";
+/// 2
 
-// Попытка изменить значение константы
-myConstant = "World"; // Вызовет ошибку, так как константу нельзя изменить.
+let x = 10,
+  y = 7;
 
-let name = prompt("Введите ваше имя:");
-let address = prompt("Введите ваш адрес:");
-let phone = prompt("Введите ваш номер телефона:");
+const result = x > y ? "x больше, чем y" : "x не больше, чем y";
+console.log(result);
 
-console.log(`Студент ${name}. Адрес: ${address}, Номер телефона: ${phone}`);
+///
 
-let exchangeRate = prompt("Введите курс рубля к доллару:");
-let rublesAmount = prompt("Введите количество доступных рублей:");
+/// 3
 
-let dollarsAmount = rublesAmount / exchangeRate;
-console.log(`На доступные рубли можно купить ${dollarsAmount.toFixed(2)} долларов.`);
+let num = prompt("Введите число");
+
+if (num % 2 === 0) {
+  console.log(`Число ${num} четное`);
+} else {
+  console.log(`Число ${num} нечетное`);
+}
+
+///
+
+/// 4
+
+let num1 = +prompt("Введите первое число");
+let num2 = +prompt("Введите второе число");
+let num3 = +prompt("Введите третье число");
+
+if (num1 >= num2 && num1 >= num3) {
+  console.log(`Наибольшее число: ${num1}`);
+} else if (num2 >= num1 && num2 >= num3) {
+  console.log(`Наибольшее число: ${num2}`);
+} else {
+  console.log(`Наибольшее число: ${num3}`);
+}
+
+///
+
+/// 5
+
+///
