@@ -1,43 +1,41 @@
-/// 1
+/// 1 
 
-function checkNumberConstant(number) {
-  if (number < 10) {
-    console.log("константа меньше 10");
-  } else {
-    console.log("константа не меньше 10");
-  }
-}
+let man = {
+  age: 23,
+  height: 185,
+  money: 1000,
+  name: "Иван",
+  lastName: "Иванов",
+  login: "ivan123",
+  password: "qwerty",
+};
 
-checkNumberConstant(5);
-checkNumberConstant(15);
+man.address = "ул. Пушкина, д. 10, кв. 5";
+console.log(man);
+
 
 /// 2
 
-function showAlert() {
-  alert("Привет, Мир");
+let password = "qwerty"; // Здесь можно изменить значение для тестирования
+
+if (password === man.password) {
+  console.log(`Добро пожаловать, ${man.name} ${man.lastName}. Ваш логин ${man.login}.`);
+} else {
+  console.log(`Указанный пароль "${password}" не верен. Попробуйте еще раз.`);
 }
 
-showAlert();
 
 /// 3
 
-function printJavaScript() {
-  console.log("JavaScript");
+let num = 1;
+while (num < 3) {
+  console.log(`4ucno: ${num}`);
+  num++;
 }
-
-printJavaScript();
 
 /// 4
 
-let text = "Этот текст содержит lorem";
-
-function checkTextContent(str) {
-  if (str.includes("lorem")) {
-    console.log("У вас ошибка в тексте");
-  } else {
-    console.log("Содержимое переменной: " + str);
-  }
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
 }
 
-checkTextContent(text);
-checkTextContent("Этот текст не содержит");
