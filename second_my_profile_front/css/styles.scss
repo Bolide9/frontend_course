@@ -459,9 +459,12 @@ body {
   margin-bottom: 30px;
   background: $second-blue-color;
 
+  display: flex;
+  align-items: center;
+
   .information__fragment {
     width: 100%;
-    margin: 50px 0px;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1066,5 +1069,38 @@ body {
         width: 33px;
       }
     }
+  }
+
+  .our-team__title {
+    text-align: center;
+  }
+
+  .our-team__employers {
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .blog__content {
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .clients-container {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .contact-us__container-content {
+    gap: 10;
+    flex-direction: column;
+
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .footer-container__skills {
+    flex-wrap: wrap;
+    gap: 30px !important;
+    justify-content: center;
   }
 }
