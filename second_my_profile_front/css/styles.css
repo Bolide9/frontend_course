@@ -591,8 +591,13 @@ body {
   gap: 30px;
   display: grid;
   margin-top: 50px;
-  position: relative;
   grid-template-columns: repeat(3, 1fr);
+}
+.blog__container .blog__content .blog_card-inner {
+  position: relative;
+}
+.blog__container .blog__content .blog_card-inner:before {
+  position: absolute;
 }
 .blog__container .blog__content .blog__card {
   width: 100%;
@@ -600,6 +605,20 @@ body {
   position: relative;
   background: #11161c;
   border-radius: 0px 90px 0px 0px;
+}
+.blog__container .blog__content .blog__card:before {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 100%;
+  position: absolute;
+  transition: all 0.5s;
+  background: #003adb;
+  border-radius: 0px 90px 0px 0px;
+}
+.blog__container .blog__content .blog__card:hover:before {
+  top: 0;
 }
 .blog__container .blog__content .blog__card .blog-info {
   margin-top: 20px;

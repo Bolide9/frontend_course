@@ -706,8 +706,15 @@ body {
     gap: 30px;
     display: grid;
     margin-top: 50px;
-    position: relative;
     grid-template-columns: repeat(3, 1fr);
+
+    .blog_card-inner {
+      position: relative;
+
+      &:before {
+        position: absolute;
+      }
+    }
 
     .blog__card {
       width: 100%;
@@ -715,6 +722,22 @@ body {
       position: relative;
       background: #11161c;
       border-radius: 0px 90px 0px 0px;
+
+      &:before {
+        content: "";
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 100%;
+        position: absolute;
+        transition: all 0.5s;
+        background: $blue-color;
+        border-radius: 0px 90px 0px 0px;
+      }
+
+      &:hover:before {
+        top: 0;
+      }
 
       .blog-info {
         margin-top: 20px;
@@ -734,7 +757,6 @@ body {
         .blog__card-title {
           font-size: 24px;
           font-weight: 500;
-
           margin-top: 20px;
           margin-bottom: 20px;
         }
