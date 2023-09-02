@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <header className="App-header">
-        <p>Current count: {count}</p>
+        <p className='counter'>Current count: {count}</p>
 
         <div className='action_buttons'>
           <Button title={"Increment"} action={onIncrement} />
