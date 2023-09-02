@@ -1,22 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from "react";
+import Button from './appButton/button';
+
 
 function App() {
+  let [count, setCount] = useState(0);
+
+  let onIncrement = () => setCount(count++);
+  let onDecrement = () => setCount(count--);
+  let onReset = () => setCount(count = 0);
+
+
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Current count: {count}</p>
+
+        <div className='action_buttons'>
+          <Button title={"Increment"} action={onIncrement} />
+          <Button title={"Decrement"} action={onDecrement} />
+          <Button title={"Reset"} action={onReset} />
+        </div>
       </header>
     </div>
   );
