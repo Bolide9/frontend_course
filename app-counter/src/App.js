@@ -1,27 +1,15 @@
-import './App.css';
-import React, { useState } from "react";
-import Button from './appButton/button';
+import React from "react";
+import Header from './components/header/Header';
+import Body from "./components/body/Body";
+import Footer from "./components/footer/Footer";
 
 
 function App() {
-  let [count, setCount] = useState(0);
-
-  let onIncrement = () => setCount(count++);
-  let onDecrement = () => setCount(count--);
-  let onReset = () => setCount(count = 0);
-
-
   return (
     <div>
-      <header className="App-header">
-        <p className='counter'>Current count: {count}</p>
-
-        <div className='action_buttons'>
-          <Button title={"Increment"} action={onIncrement} />
-          <Button title={"Decrement"} action={onDecrement} />
-          <Button title={"Reset"} action={onReset} />
-        </div>
-      </header>
+      <Header></Header>
+      <Body></Body>
+      <Footer></Footer>
     </div>
   );
 }
