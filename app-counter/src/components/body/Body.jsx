@@ -6,9 +6,15 @@ import { default as refreshIcon } from "../../assets/icons/refresh_icon.svg";
 function Body() {
   let [count, setCount] = useState(0);
 
-  let onIncrement = () => setCount(count++);
-  let onDecrement = () => setCount(count--);
   let onReset = () => setCount((count = 0));
+
+  let onIncrement = () => setCount((count += 3));
+
+  let onDecrement = () => {
+    let _count = count;
+    if ((_count -= 2) < 0) return;
+    setCount(count -= 2);
+  };
 
   return (
     <body>
