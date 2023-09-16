@@ -1,0 +1,17 @@
+.title-container {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.title-container__title {
+  margin: 0px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #64c4ed;
+  text-align: center;
+}
+
+.title-container__rounded-divider {
+  border-radius: 5px;
+  border-top: 5px solid #f2f2f2;
+}
