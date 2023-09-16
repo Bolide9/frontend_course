@@ -34,7 +34,7 @@ const Body = () => {
 
   return (
     <div className="container">
-      <Title count={1} />
+      <Title count={todos.length} />
       <TodoList todos={todos} onRemove={onRemove} />
       <Form onAdd={onAdd} />
     </div>
